@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                 // Target output ES version
+    "module": "ESNext",                 // ES module support
+    "moduleResolution": "Node",         // Resolves modules in Node.js style
+    "baseUrl": ".",                     // Base directory for paths
+    "paths": {
+      "@/components/*": ["src/components/*"], // Alias for components
+      "@/lib/*": ["src/lib/*"]               // Alias for libraries
+    },
+    "jsx": "react-jsx",                 // Enable React JSX transformations
+    "allowJs": true,                    // Allow JavaScript files
+    "checkJs": false,                   // Disable type checking for JS files
+    "resolveJsonModule": true,          // Allow importing JSON modules
+    "esModuleInterop": true,            // Ensure compatibility with ES Modules
+    "skipLibCheck": true,               // Skip type checks for node_modules
+    "strict": false                     // Disable strict type checks
+  },
+  "include": ["src/**/*"],              // Include all files in src folder
+  "exclude": ["node_modules", "dist"]   // Exclude unnecessary directories
+}
